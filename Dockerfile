@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM python:alpine
+FROM python:3.9-bullseye
 
 RUN pip install --no-cache-dir pygithub
 COPY entrypoint.py /entrypoint.py
